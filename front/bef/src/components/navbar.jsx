@@ -1,53 +1,45 @@
-import react from 'react';
+import React from 'react';
+import { Link, Outlet } from 'react-router-dom'
 import '../styles/navbar.css'
 import imgLogo from '../images/port 2 be.jpg';    
 
-function Navbar(){
+const Navbar = () =>{
     return(
         <>
+        
                 <nav id='navbarContainer' className="navbar fixed-top navbar-expand-lg ">
                     <div className="container-fluid">
-                        <a className="navbar-brand text-light" href="">
+                        <Link className="navbar-brand text-light" to={"/"}>
                             <img src={imgLogo} alt="Bootstrap" width="30" height="24" />
-                        </a>
+                        </Link>
                         <button className="navbar-toggler  text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
                         <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
                         <ul id='navbutton' className="navbar-nav">
                             <li className="nav-item">
-                            <a className="nav-link text-light active" aria-current="page" href="#">Home</a>
+                            <Link className="nav-link text-light" aria-current="page" to={"/"}>HOME</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Bandas</a>
+                            <Link className="nav-link text-light" to={`/bandas`}>BANDAS</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Contactos</a>
+                            <Link className="nav-link text-light" to={`/evento`}>SOBRE EL EVENTO</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Nosotros</a>
+                            <Link className="nav-link text-light" to={`/nosotros`}>NOSOTROS</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Postales</a>
+                            <Link className="nav-link text-light" to={`/postales`}>POSTALES</Link>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link text-light" href="#">Merch</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Ediciones
-                            </a>
-                            <ul className="dropdown-menu">
-                                <li><a className="dropdown-item" href="index.html">2023</a></li>
-                                <li><a className="dropdown-item" href="#">2022</a></li>
-                                <li><a className="dropdown-item" href="#">2019</a></li>
-                                <li><a className="dropdown-item" href="#">2018</a></li>
-                            </ul>
+                            <Link className="nav-link text-light" to={`/tienda`}>TIENDA</Link>
                             </li>
                         </ul>
                         </div>
                     </div>
                 </nav>
+                <Outlet />
         </>
     )
 }

@@ -5,12 +5,11 @@ footer{
     background-position: center;
 }
 
-/* @media only screen and (max-width: 600px) {
-    footer{
-        margin-top: 51%;
+@media only screen and (max-width: 600px) {
+    #footer{
         background-color: rgba(37, 37, 37, 0.50);;
         background-image: url('../images/foto3.jpg');
         background-size: cover;
         background-position: center;
     }
-} */
+}

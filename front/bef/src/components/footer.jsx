@@ -4,9 +4,9 @@ import '../styles/footer.css';
 function Footer() {
   return (
     <>
-        <div className=''>
+        <div className='conteiner-fluid'>
 
-        <footer className="text-center text-white" >
+        <footer id='footer' className="footer mt-auto py-3 text-center text-white" >
             <div className="container p-4">
             <section className="mb-4">
                 <h6 className="text-uppercase fw-bold mb-4">Contacto</h6>
