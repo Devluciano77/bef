@@ -10,14 +10,15 @@ import Nosotros from './components/Nosotros';
 import Postales from './components/Postales';
 import Tienda from './components/Tienda';
 
+
 import Footer from './components/footer'
 
-function App() {
+const App = () => {
 
   return (
     <>
-      <div id='root' className='fullContainer'>
-        <Navbar />
+      <div id='root'>
+      
         <Routes>
           <Route path='/' element={<Navbar />}>
             <Route path='/' element={<Portada />}></Route>
@@ -34,4 +35,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
