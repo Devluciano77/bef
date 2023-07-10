@@ -1,13 +1,14 @@
 import React from 'react';
 import '../styles/Evento.css';
 import Foto5 from '../images/foto5.jpg'
+import Footer from "./footer";
 
 const Postales = () => {
   return (
     <div className="">
         <hr />
         <hr />
-        <h1>POSTALES EN DESARROLLO</h1>
+        <h1 className="mt-5">POSTALES EN DESARROLLO</h1>
         <div id="carouselExampleInterval" className="container carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active" data-bs-interval="10000">
@@ -29,6 +30,7 @@ const Postales = () => {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+        <Footer />
     </div>
   );
 }

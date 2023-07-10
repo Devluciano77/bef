@@ -11,14 +11,11 @@ import Postales from './components/Postales';
 import Tienda from './components/Tienda';
 
 
-import Footer from './components/footer'
-
 const App = () => {
 
   return (
     <>
       <div id='root'>
-      
         <Routes>
           <Route path='/' element={<Navbar />}>
             <Route path='/' element={<Portada />}></Route>
@@ -29,7 +26,6 @@ const App = () => {
             <Route path='/tienda' element={<Tienda />}></Route>
           </Route>
         </Routes>
-        <Footer />
       </div>
     </>
   )

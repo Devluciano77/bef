@@ -9,8 +9,8 @@ const Navbar = () =>{
         
                 <nav id='navbarContainer' className="navbar fixed-top navbar-expand-lg ">
                     <div className="container-fluid">
-                        <Link className="navbar-brand text-light" to={"/"}>
-                            <img src={imgLogo} alt="Bootstrap" width="30" height="24" />
+                        <Link className="navbar-brand text-light" to={"/"}>BE
+                            {/* <img src={imgLogo} alt="Bootstrap" width="30" height="24" /> */}
                         </Link>
                         <button className="navbar-toggler  text-bg-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
                         <span className="navbar-toggler-icon"></span>

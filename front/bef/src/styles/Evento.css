@@ -1,5 +1,9 @@
 #ubicacion{
-    width: 600px;
-    height: 450px;
+    align-items: center;
+    width: 500px;
+    height: 350px;
     border:0
+}
+#cardLocation{
+    background-color: rgba(37, 37, 37, 0.50);
 }

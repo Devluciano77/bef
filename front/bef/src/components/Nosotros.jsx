@@ -1,13 +1,15 @@
 import React from 'react';
 import nosotros from '../images/Nosotros.jpg'
 import '../styles/Nosotros.css';
+import Footer from "./footer";
 
 const Nosotros = () => {
   return (
-    <div className="container-fluid">
+    <>
+          <div className="container-fluid">
         <hr />
         <hr />
-        <h1>NOSOTROS EN DESARROLLO</h1>
+        <h1 className="mt-5">NOSOTROS EN DESARROLLO</h1>
         <div id='syleCard' className="card mb-3" >
           <div className="row g-0">
             <div className="col-md-4 h-100">
@@ -27,6 +29,9 @@ const Nosotros = () => {
           </div>
         </div>
     </div>
+    <Footer />
+    </>
+
   );
 }
 

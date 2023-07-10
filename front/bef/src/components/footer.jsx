@@ -4,7 +4,7 @@ import '../styles/footer.css';
 function Footer() {
   return (
     <>
-        <div className=''>
+        <section id='contacto'>
 
         <footer id='footer' className="text-center text-white" >
             <div className="container p-2">
@@ -49,7 +49,7 @@ function Footer() {
                 © 2023 Copyright: Bien Extremo Fest
             </div>
             </footer>
-        </div>
+        </section>
     </>
   );
 }
