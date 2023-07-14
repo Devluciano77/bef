@@ -4,9 +4,10 @@ import '../styles/Nosotros.css';
 import Footer from "./footer";
 
 const Nosotros = () => {
+  const videoId = 'SmpYmb3MOjE';
   return (
     <>
-          <div className="container-fluid">
+      <div className="container-fluid">
         <hr />
         <hr />
         <h1 className="mt-5">NOSOTROS EN DESARROLLO</h1>
@@ -28,6 +29,18 @@ const Nosotros = () => {
             </div>
           </div>
         </div>
+        <div className='container container-fluid' >
+          <div class="ratio ratio-16x9">
+            <iframe
+            className="embed-responsive-item"
+            src={`https://www.youtube.com/embed/${videoId}`}
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
     </div>
     <Footer />
     </>

@@ -8,8 +8,8 @@ const Cuenta = () => {
       // Configura simplyCountdown en el useEffect
       const options = {
         year: 2023,
-        month: 8,
-        day: 28,
+        month: 11,
+        day: 18,
         hours: 0,
         minutes: 0,
         seconds: 0,
@@ -42,7 +42,7 @@ const Cuenta = () => {
       };
     }, []);
   
-    return <div id="cuenta"></div>;
+    return <div className='container-fluid mt-5' id="cuenta"></div>;
   };
   
 export default Cuenta;
