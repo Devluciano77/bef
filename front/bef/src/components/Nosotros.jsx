@@ -30,7 +30,7 @@ const Nosotros = () => {
           </div>
         </div>
         <div className='container container-fluid' >
-          <div class="ratio ratio-16x9">
+          <div className="ratio ratio-16x9">
             <iframe
             className="embed-responsive-item"
             src={`https://www.youtube.com/embed/${videoId}`}

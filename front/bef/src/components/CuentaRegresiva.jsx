@@ -1,48 +1,54 @@
-import React, { useEffect, useRef } from 'react';
-import '../styles/cuenta.css';
+import React, { useState, useEffect } from 'react';
 
 const Cuenta = () => {
-    const countdownRef = useRef(null);
-  
-    useEffect(() => {
-      // Configura simplyCountdown en el useEffect
-      const options = {
-        year: 2023,
-        month: 11,
-        day: 18,
-        hours: 0,
-        minutes: 0,
-        seconds: 0,
-        words: {
-          days: { singular: 'day', plural: 'days' },
-          hours: { singular: 'hour', plural: 'hours' },
-          minutes: { singular: 'minute', plural: 'minutes' },
-          seconds: { singular: 'second', plural: 'seconds' }
-        },
-        plural: true,
-        inline: false,
-        inlineClass: 'simply-countdown-inline',
-        enableUtc: false,
-        onEnd: function() { return; },
-        refresh: 1000,
-        sectionClass: 'simply-section',
-        amountClass: 'simply-amount',
-        wordClass: 'simply-word',
-        zeroPad: false,
-        countUp: false
+  const calculateTimeLeft = () => {
+    const difference = +new Date("2023-11-18") - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60)
       };
-  
-      countdownRef.current = simplyCountdown('#cuenta', options);
-  
-      // Si deseas limpiar el contador al desmontar el componente, puedes hacerlo así:
-      return () => {
-        if (countdownRef.current) {
-          countdownRef.current.stop();
-        }
-      };
-    }, []);
-  
-    return <div className='container-fluid mt-5' id="cuenta"></div>;
+    }
+
+    return timeLeft;
   };
-  
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+  const { days, hours, minutes, seconds } = timeLeft;
+
+  return (
+    <div id='' className='container text-center' >
+      <h1>Comienza en</h1>
+      <div className='row align-items-center simply-section'>
+        <div className='col'>
+          {days > 0 && <h2 className='simply-amount'>{`${days} dia${days > 1 ? 's' : ''}`}</h2>}
+        </div>
+        <div className='col'>
+          <h2 className='simply-amount'>{`${hours} hora${hours > 1 ? 's' : ''}`}</h2>
+        </div>
+        <div className='col'>
+          <h2 className='simply-amount'>{`${minutes} minuto${minutes > 1 ? 's' : ''}`}</h2>
+        </div>
+        <div className='col'>
+          <h2 className='simply-amount'>{`${seconds} segundo${seconds > 1 ? 's' : ''}`}</h2>
+        </div>  
+      </div>
+
+    </div>
+  );
+};
+
 export default Cuenta;

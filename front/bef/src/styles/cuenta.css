@@ -6,20 +6,16 @@
 
 .simply-section {
 	background: rgb(25, 70, 39);
-	width: 50%;
-	/* height: 180px; */
-	margin: 10px;
-	border-radius: 100px;
+    padding: 20px;
+    margin: 20px;
+	border-radius: 20px;
 	display: flex;
-	align-items: center;
-	justify-content: center;
 }
 
 .simply-amount {
     color: rgb(204, 184, 5);
 	display: flex;
-	font-size: 50px;
-	font-weight: 700;
+	font-size: 40px;
     align-items: center;
 	justify-content: center;
 }
@@ -33,7 +29,7 @@
 }
 
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     #cuenta {
         display: flex;
         justify-content: center;
@@ -65,4 +61,4 @@
         color: aliceblue;
     }
 
-}
+} */

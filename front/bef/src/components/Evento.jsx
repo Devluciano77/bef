@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Evento.css';
 import Footer from "./footer";
+import GoogleMap from './Map';
 import Fond from '../images/fond.jpg'
 import Foto2 from '../images/foto2.jpg'
 import Cuenta from './CuentaRegresiva';
@@ -38,7 +39,7 @@ const Evento = () => {
                     </div>
                     <div id='mapa'>
                         <h1 className='text-light justify-content-center' >UBICACION</h1>
-                        <iframe className='ubi' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28549.47960938926!2d-54.781562045798196!3d-26.562387174753592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f77810368f52bb%3A0x5a0094770a4a9dda!2sParque%20Juan%20Vortisch!5e0!3m2!1ses!2sar!4v1688997343916!5m2!1ses!2sar"  loading="lazy" ></iframe>
+                        <GoogleMap />
                     </div>
                 </div>
                 <Footer />
