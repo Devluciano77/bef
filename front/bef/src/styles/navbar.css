@@ -1,7 +1,21 @@
-#navbarContainer{
+/* #navbarContainer{
     background-color: rgba(37, 37, 37, 0.50);
+} */
+
+.letrasNav{
+    text-shadow: 
+    -2px -2px 0 black, 
+    2px -2px 0 black, 
+    -2px 2px 0 black, 
+    2px 2px 0 black;
+}
+
+.navbar-bg-color {
+    background-color:  rgba(0, 0, 0, 0.9);
+    transition: background-color 0.3s ease 
 }
 
 .nav-link:hover{
-    text-shadow: 0 0 30px #fff;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    font-size: 1.1em;
 }
