@@ -2,6 +2,10 @@
     max-width: 540px;
 }
 
+#transparentCard{
+    background-color: rgba(37, 37, 37, 0.50); 
+}
+
 .inner{
     overflow: hidden;
 }
