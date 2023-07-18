@@ -30,24 +30,50 @@ const Cuenta = () => {
   const { days, hours, minutes, seconds } = timeLeft;
 
   return (
-    <div id='' className='container text-center' >
-      <h1>Comienza en</h1>
-      <div className='row align-items-center simply-section'>
-        <div className='col'>
-          {days > 0 && <h2 className='simply-amount'>{`${days} dia${days > 1 ? 's' : ''}`}</h2>}
+<div id='' className='container text-center'>
+  <h1 className='mt-5 mb-5'>COMIENZA EN</h1>
+  <div className='row align-items-center mb-5'>
+    <div className='col-sm-6 col-md-3'>
+      <div className='card  border bg-transparent text-light'>
+        <div className='card-body'>
+          {days > 0 && (
+            <h2 className='simply-amount'>
+              <span className='number me-3'>{days}</span> día{days > 1 ? 's' : ''}
+            </h2>
+          )}
         </div>
-        <div className='col'>
-          <h2 className='simply-amount'>{`${hours} hora${hours > 1 ? 's' : ''}`}</h2>
-        </div>
-        <div className='col'>
-          <h2 className='simply-amount'>{`${minutes} minuto${minutes > 1 ? 's' : ''}`}</h2>
-        </div>
-        <div className='col'>
-          <h2 className='simply-amount'>{`${seconds} segundo${seconds > 1 ? 's' : ''}`}</h2>
-        </div>  
       </div>
-
     </div>
+    <div className='col-sm-6 col-md-3'>
+      <div className='card  border bg-transparent text-light'>
+        <div className='card-body'>
+          <h2 className='simply-amount'>
+            <span className='number me-3'>{hours}</span> hora{hours > 1 ? 's' : ''}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div className='col-sm-6 col-md-3'>
+      <div className='card  border bg-transparent text-light'>
+        <div className='card-body'>
+          <h2 className='simply-amount'>
+            <span className='number me-3'>{minutes}</span> minuto{minutes > 1 ? 's' : ''}
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div className='col-sm-6 col-md-3'>
+      <div className='card  border bg-transparent text-light'>
+        <div className='card-body'>
+          <h2 className='simply-amount'>
+            <span className='number me-3'>{seconds}</span> segundo{seconds > 1 ? 's' : ''}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   );
 };
 

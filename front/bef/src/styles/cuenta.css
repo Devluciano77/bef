@@ -1,64 +1,11 @@
 /* ? ----- Cuenta Regresiva ----- */
-#cuenta {
-	display: flex;
-	margin-bottom: 100px;
-}
 
-.simply-section {
-	background: rgb(25, 70, 39);
-    padding: 20px;
-    margin: 20px;
-	border-radius: 20px;
-	display: flex;
-}
 
 .simply-amount {
-    color: rgb(204, 184, 5);
+    color: rgb(255, 255, 255);
 	display: flex;
-	font-size: 40px;
     align-items: center;
 	justify-content: center;
 }
 
-.simply-word {
-	font-weight: 300;
-	font-size: 30px;
-    color: aliceblue;
-    align-items: center !important;
-	justify-content: center !important;
-}
 
-
-/* @media only screen and (max-width: 600px) {
-    #cuenta {
-        display: flex;
-        justify-content: center;
-        margin-bottom: 120px;
-    }
-    
-    .simply-section {
-        background: rgb(25, 70, 39);
-        width: 50%;
-        margin: 0 10px;
-        border-radius: 5px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .simply-amount {
-        color: rgb(204, 184, 5);
-        display: flex;
-        font-size: 40px;
-        font-weight: 500;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .simply-word {
-        font-weight: 250;
-        font-size: 20px;
-        color: aliceblue;
-    }
-
-} */
