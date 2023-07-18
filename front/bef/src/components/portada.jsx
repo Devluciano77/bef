@@ -11,7 +11,7 @@ const Portada = () => {
   return (
     <div className="portada-container">
       <img src={imagenPort} id='imagenGradient' className='img-fluid' alt="portada" />
-      <button className="btn btn-outline-success centered-button" type="button">Reserva tu anticipada</button>
+      <button className="btn btn-outline centered-button" type="button">Reserva tu anticipada</button>
       <Cuenta />
       <Footer />
     </div>

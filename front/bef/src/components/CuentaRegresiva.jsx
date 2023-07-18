@@ -31,7 +31,7 @@ const Cuenta = () => {
 
   return (
 <div id='' className='container text-center'>
-  <h1 className='mt-5 mb-5'>COMIENZA EN</h1>
+  <h1 className='mt-5 mb-5'>EL EVENTO COMIENZA EN</h1>
   <div className='row align-items-center mb-5'>
     <div className='col-sm-6 col-md-3'>
       <div className='card  border bg-transparent text-light'>

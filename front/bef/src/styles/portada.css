@@ -1,5 +1,6 @@
 .portada-container {
     position: relative;
+    
 }
   
 .centered-button {
@@ -7,7 +8,18 @@
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000;
+
+    background-color: rgb(68, 112, 45) !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255);
+
+}
+
+.centered-button:hover{
+    background-color: #000000 !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: rgb(255, 255, 255) !important;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 

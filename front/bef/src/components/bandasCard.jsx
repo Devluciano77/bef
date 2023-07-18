@@ -98,8 +98,8 @@ function BandasCard() {
         <img src={Fond} className="img-fluid position-fixed" alt="portada"></img>
 
         <div className="card-img-overlay">
-          <hr />
-          <hr />
+          <br />
+          <br />
           <h1 className="mt-5">BANDAS CONFIRMADAS</h1>
           <div id="container-cards" className="container-fluid">
 
